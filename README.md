@@ -49,11 +49,14 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/amar57603/ai-enterpris
 ```
 
 <details>
-<summary><b>🛠️ Click here for Other AI Tools (ChatGPT, Copilot, Claude, v0)</b></summary>
+<summary><b>🌍 Click here for the Universal Method (ChatGPT, Copilot, Llama, OpenDevin, etc.)</b></summary>
+
+Because this playbook compiles down to a single raw Markdown text file, **it works on literally any AI model in existence.** It doesn't matter if you are using Claude, ChatGPT, a local Llama 3 model, Codex, or OpenDevin. 
 
 * **GitHub Copilot / Roo Code:** Download the compiled file from Method 2 and rename it to `.github/copilot-instructions.md` (Copilot) or `.clinerules` (Roo).
-* **ChatGPT Pro / Claude:** Download the compiled file, open your AI web interface, and paste the contents into the "Custom Instructions" or "Project Knowledge" section.
-* **Lovable / v0.dev:** Paste the raw contents into your initial project prompt.
+* **Web Interfaces (ChatGPT / Claude):** Open your AI interface, go to "Custom Instructions" or "Project Knowledge", and paste the raw text.
+* **Local Models & Custom Agents (Llama, OpenDevin, Codex):** Just download `SKILL.md` from the `compiled/` folder and feed it directly into your agent's system prompt or starting context window. 
+* **Design Agents (Lovable / v0.dev):** Paste the raw text into your initial project prompt.
 </details>
 
 ---
