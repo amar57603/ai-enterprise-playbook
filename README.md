@@ -51,8 +51,8 @@ If you set the project to **Security Level 3**, the AI will perform a mandatory 
 
 Because this playbook is split into 8 separate, highly detailed files, you cannot just drag and drop the folder into a chat window. To force the AI to strictly obey these rules automatically, you need to compile them into the AI's "brain". 
 
-### Method 1: Cursor / Windsurf (The Easy Way)
-If you are using AI IDEs like Cursor or Windsurf, they look for a single `.cursorrules` or `.windsurfrules` file in the root of your project.
+### Method 1: AI IDEs (Cursor, Windsurf, PearAI)
+These editors look for a single `.cursorrules` or `.windsurfrules` file in the root of your project.
 
 **Mac/Linux:**
 ```bash
@@ -63,13 +63,25 @@ cat path/to/ai-enterprise-playbook/rules/*.md > .cursorrules
 Get-Content path\to\ai-enterprise-playbook\rules\*.md -Raw | Set-Content .cursorrules
 ```
 
-### Method 2: ChatGPT Pro / Claude Projects
-1. Compile the 8 files into a single text file on your computer using the command above.
-2. Open **ChatGPT** -> Go to "Customize ChatGPT" -> Paste the massive block of text into the "Instructions" box.
-3. Open **Claude** -> Create a new "Project" -> Upload the compiled `.md` file into the "Project Knowledge" section and write a custom instruction: *"You must strictly follow the rules outlined in the uploaded playbook document."*
+### Method 2: VS Code Extensions (GitHub Copilot, Roo Code, Continue.dev)
+If you are using Copilot Workspace or VS Code extensions like Roo/Cline, they rely on workspace instructions.
+1. Compile the rules into a single file using the commands from Method 1.
+2. Rename the compiled file to `.github/copilot-instructions.md` (for Copilot) or `.clinerules` / `.roomodes` (for Roo/Cline).
+3. The extension will automatically read and enforce these rules in your workspace.
 
-### Method 3: Gemini / Antigravity Global Skills (Advanced)
-If you are running a local terminal-based agent (like Google Antigravity), you want these rules to be global. You can set up a Sync Script that takes the local human-readable files and injects them straight into the agent's global configuration directory.
+### Method 3: Web-Based AI (ChatGPT Pro, Claude Projects, Lovable, v0)
+1. Compile the 8 files into a single text file on your computer.
+2. Open **ChatGPT** -> Go to "Customize ChatGPT" -> Paste the text into the "Instructions" box.
+3. Open **Claude** -> Create a new "Project" -> Upload the compiled `.md` file into "Project Knowledge".
+4. Open **Lovable / v0** -> Paste the rules into your initial project prompt or global system instructions.
+
+### Method 4: CLI Autonomous Agents (Aider, Devin, OpenDevin)
+For terminal-based coding agents like Aider, they look for convention files.
+- Compile the files into a single `CONVENTIONS.md` file in the root of your directory.
+- Start your agent (e.g., `aider`) and give it one strict initial prompt: *"Read CONVENTIONS.md and strictly follow it for all tasks."*
+
+### Method 5: Gemini / Antigravity Global Skills (Advanced)
+If you are running a local terminal-based agent framework (like Google Antigravity), you want these rules to be global so they apply to all projects. You can set up a Sync Script that takes the local files and injects them straight into the agent's global configuration directory.
 
 **Windows PowerShell Sync Script Example:**
 ```powershell
