@@ -4,6 +4,18 @@ A battle-tested set of strict rules designed to tame autonomous AI coding agents
 
 ---
 
+## 📑 Table of Contents
+- [The Problem & The Solution](#-the-problem)
+- [How to Install (Choose your weapon)](#-how-to-install-choose-your-weapon)
+  - [Zero-Touch Install (Autonomous Agents)](#1-the-zero-touch-install-for-autonomous-agents)
+  - [1-Line Install (Cursor, Windsurf)](#2-the-1-line-install-for-cursor-windsurf-pearai)
+  - [Other AI Tools (ChatGPT, Claude, etc.)](#-click-here-for-other-ai-tools-chatgpt-copilot-claude-v0)
+- [How it Works (The 6 Phases)](#-how-it-works)
+- [What's Under the Hood? (The 8 Pillars)](#-whats-under-the-hood-the-8-pillars)
+- [Contributing](#-contributing)
+
+---
+
 ## 🎯 The Problem
 
 By default, AI agents try to guess what you want and rush straight into writing code. This leads to:
@@ -61,17 +73,20 @@ Once installed, your AI is strictly bound by a new workflow. It will no longer r
 
 ---
 
-## 📂 What's Under the Hood?
+## 📂 What's Under the Hood? (The 8 Pillars)
 
-If you prefer to read or edit the rules yourself, look inside the `rules/` folder in this repository. The playbook is powered by 8 core pillars:
-1. `project_workflow_rules.md` (The 6-phase pipeline)
-2. `design_direction_rules.md` (The "Anti-AI-Generica" UI rules)
-3. `architecture_style_rules.md` (Clean code standards)
-4. `backend_rules.md` (Database and API security)
-5. `frontend_rules.md` (Component standards)
-6. `accessibility_performance_rules.md` (Web Vitals)
-7. `git_discipline_rules.md` (Branching and commits)
-8. `agent_rules.md` (AI behavioral constraints)
+If you prefer to read or edit the rules yourself, look inside the `rules/` folder. The playbook is powered by 8 core pillars that enforce enterprise-grade standards across every domain:
+
+| Rule File | Description & Capabilities |
+| :--- | :--- |
+| `agent_rules.md` | **AI Behavioral Constraints.** Forces the AI to be honest, requires strict self-verification, and mandates **Multi-Agent Delegation** (spawning subagents to avoid context overload). Also forces the AI to proactively recommend missing skills and IDE extensions. |
+| `project_workflow_rules.md` | **The 6-Phase Pipeline.** Enforces the Discovery interview, PRD generation, and the mandatory Pre-Release Pentest. |
+| `design_direction_rules.md` | **The Anti-AI-Generica Rule.** Forces the AI to provide premium, custom design options (glassmorphism, overlapping grids) and mandates that the Human makes all final aesthetic decisions. |
+| `backend_rules.md` | **Security & Databases.** Strict API standards, ORM rules, and database security protocols (scaled by Security Level). |
+| `frontend_rules.md` | **UI Components.** Component boundaries, prop typing, state management, and client-side validation rules. |
+| `architecture_style_rules.md` | **Clean Code.** Rules for folder structure, dependency injection, and separation of concerns. |
+| `accessibility_performance_rules.md` | **Web Vitals.** Screen reader compatibility, contrast ratios, and optimization standards. |
+| `git_discipline_rules.md` | **Version Control.** Strict conventional commit requirements and branch management logic. |
 
 ## 🤝 Contributing
 Feel free to fork this repository, tweak the rules for your own team, and submit a PR! Let's build a world where AI agents write clean, secure, and beautiful code by default.
