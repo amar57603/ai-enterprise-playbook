@@ -34,18 +34,18 @@ You only need to install this once per project. Choose the method that matches y
 
 ### 1️⃣ The Zero-Touch Install (For Autonomous Agents)
 If you use an agent like **Antigravity, Aider, or Cline**, just paste this prompt into your chat window:
-> *"Please download the Enterprise Playbook from `https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook-a/main/compiled/SKILL.md` and install it as a persistent rule/skill in your system."*
+> *"Please download the Enterprise Playbook from `https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook/main/compiled/SKILL.md` and install it as a persistent rule/skill in your system."*
 
 ### 2️⃣ The 1-Line Install (For Cursor, Windsurf, PearAI)
 Run this command in your project's terminal to instantly configure your AI IDE:
 
 **Mac / Linux:**
 ```bash
-curl -sSL https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook-a/main/compiled/.cursorrules -o .cursorrules
+curl -sSL https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook/main/compiled/.cursorrules -o .cursorrules
 ```
 **Windows (PowerShell):**
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook-a/main/compiled/.cursorrules" -OutFile ".cursorrules"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook/main/compiled/.cursorrules" -OutFile ".cursorrules"
 ```
 
 <details>
