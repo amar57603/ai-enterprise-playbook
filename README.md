@@ -14,6 +14,25 @@ This playbook enforces a **Strict 6-Phase Workflow** and **8 Core Rulesets** tha
 3. **Respect Security Levels:** You dictate the Security Level (1, 2, or 3) in the PRD, and the AI adapts its security checks and pentesting accordingly.
 4. **Follow Git Discipline:** The AI is forced to use conventional commits and logical branching.
 
+---
+
+## ⚡ Quick Install (1-Line Command)
+If you are using Cursor, Windsurf, or PearAI, you can download the entire compiled playbook straight into your project with a single command. Run this in your terminal at the root of your project:
+
+**Mac / Linux:**
+```bash
+curl -sSL https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook-a/main/compiled/.cursorrules -o .cursorrules
+```
+
+**Windows (PowerShell):**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/amar57603/ai-enterprise-playbook-a/main/compiled/.cursorrules" -OutFile ".cursorrules"
+```
+
+*(For ChatGPT, Claude, Copilot, or Aider, scroll down to the "How to Install" section at the bottom!)*
+
+---
+
 ## 📂 The 8 Core Rulesets
 
 Inside the `rules/` folder, you will find the 8 pillars of this playbook:
