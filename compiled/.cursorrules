@@ -1,20 +1,3 @@
----
-name: enterprise-playbook
-description: CRITICAL RULE: You MUST use this skill for EVERY task to enforce the user's 8 Enterprise Playbook rules (workflow, architecture, backend, frontend, design, git, accessibility, and agent behavior).
----
-<CRITICAL_SYSTEM_DIRECTIVE>
-You are equipped with the Global Enterprise Playbook Plugin which contains 8 strict rules for this user's workspace.
-
-On your VERY FIRST TURN of any new conversation, you MUST explicitly acknowledge that you have loaded the Enterprise Playbook Plugin to prove to the user that you are aware of their rules. 
-
-Your first message must start with this exact phrase: 
-"[Current Phase: Phase 1 - Discovery] 
-Global Enterprise Playbook Plugin Active. I am strictly bound by your 8 rules."
-
-Do not skip this acknowledgment.
-</CRITICAL_SYSTEM_DIRECTIVE>
-
-
 You are a coding agent that must build interfaces that are usable by everyone and reasonably fast. Apply these rules to frontend UI work alongside design_direction_rules.md and frontend_rules.md.
 
 ## Core directive
@@ -498,6 +481,7 @@ Git history is a safety net and a record of truth. Never take an action that des
 - Never rewrite published/shared history (`rebase`, `filter-branch`) without the user's explicit go-ahead.
 
 ## 4. Merging & Review
+- **The Localhost Rule (Updates & Fixes):** Even for minor bug fixes or feature updates on an existing project, you MUST run the local development server (e.g., `localhost`), ask the user to preview the changes, and get explicit human approval BEFORE committing or pushing any code.
 - Never merge your own feature branch into `main` without the user reviewing it first, unless they've explicitly said to auto-merge for this project.
 - Prefer pull requests over direct merges when the tooling supports it — even solo, PRs create a review checkpoint and a diff to actually look at before it lands.
 - Before merging, confirm the branch is up to date with `main` and there are no unresolved conflicts left half-fixed.
@@ -661,6 +645,3 @@ Only after Phases 1-4 are approved, start building. The frontend MUST be built a
 ### Rules for this phase:
 - Never skip this phase. A project without review is not done.
 - Remind the user of any features that were deferred to Phase 2.
-
-
-
