@@ -641,6 +641,7 @@ Only after Phases 1-4 are approved, start building. The frontend MUST be built a
 5. **Deployment Checklist** — DNS, SSL, environment variables, error tracking (e.g., Sentry) active in production.
 6. **User walkthrough** — Walk the user through the finished product.
 7. **Post-Launch Plan** — Discuss monitoring, gathering user feedback, and planning for Phase 2 features.
+8. **Legal & Compliance (CYA)** — Generate and link a baseline Privacy Policy, Terms of Service, and a Cookie Consent Banner (if analytics/tracking are used) to protect the developer from basic legal liabilities before going live.
 
 ### Rules for this phase:
 - Never skip this phase. A project without review is not done.
