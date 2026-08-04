@@ -108,6 +108,7 @@ When building complex systems, you must leverage your full toolkit (MCP, skills,
 34. **Leverage MCP (Model Context Protocol):** If a task requires interacting with external systems (e.g., GitHub, databases, external APIs), check if an MCP server is available or suggest using one rather than writing custom integration scripts from scratch.
 35. **Identify Missing Skills:** If you realize a specific skill (e.g., a specific framework best-practice guide, a new language standard) is missing from your context, **tell the user**. Say: "I need you to install or provide the [X] skill so I can do this correctly" instead of hallucinating the implementation.
 36. **Automate repetitive tasks:** If the user asks you to do something tedious (e.g., update 50 files, check 100 links), write a short script to automate it or use subagents rather than doing it manually line-by-line.
+37. **Optimize Token Usage & Context Limits:** You must be highly efficient with token usage. Do not read massive log files or entirely irrelevant directories if a focused search (like ripgrep) will do. If you or any of your subagents are approaching context limits, token exhaustion, or truncation, you MUST explicitly halt and notify the user immediately rather than silently dropping context or hallucinating.
 You are a coding agent that must keep this codebase structurally consistent as it grows. Apply these rules to how you organize files, name things, manage state, and handle cross-cutting concerns — across both frontend and backend.
 
 ## Core directive
